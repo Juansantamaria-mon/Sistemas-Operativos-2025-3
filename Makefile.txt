@@ -1,0 +1,24 @@
+# Compilador a utilizar
+CC = clang
+override CFLAGS += -g -Wno-everything -pthread -lm
+
+# Archivos fuente y de cabecera
+SRCS = main.c modulo.c
+HEADERS = modulo.h
+
+# Objetivo por defecto: compilar el ejecutable principal
+all: main
+
+# Compilación estándar
+main: $(SRCS) $(HEADERS)
+	$(CC) $(CFLAGS) $(SRCS) -o "$@"
+
+# Compilación en modo depuración (sin optimizaciones)
+main-debug: $(SRCS) $(HEADERS)
+	$(CC) $(CFLAGS) -O0 $(SRCS) -o "$@"
+
+
+# Limpieza de archivos binarios generados
+clean:
+	rm -f main main-debug
+
