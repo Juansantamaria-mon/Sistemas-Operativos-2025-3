@@ -71,6 +71,7 @@ void imprMatrices(int n, double *matriz){
         printf("\n#######################################################\n");
     }
 };
+/**Funcion para la multiplicacion de matrices m1Xm2=m3**/
 void multiMatrizClasica(double *m1, double *m2, double *m3, int n){
  for(int i=0; i<n; i++){
         for(int j=0; j<n; j++){
@@ -85,5 +86,6 @@ void multiMatrizClasica(double *m1, double *m2, double *m3, int n){
         }
     }
 };
+
 
 
