@@ -1,0 +1,29 @@
+Programas en C – Sistemas Operativos
+
+Esta carpeta contiene tres programas en C (Santamarialab01.c, Santamarialab02.c,
+Santamarialab03.c) que ilustran creación de procesos con fork() y comunicación
+entre procesos mediante pipe en un entorno POSIX.
+
+Estructura:
+
+Santamarialab01.c : fork básico: creación e identificación de procesos (padre e hijo).
+Santamarialab02.c : fork con bucles diferenciados: HIJO 0..4 y PADRE 5..0 (orden no garantizado).
+Santamarialab03.c : comunicación con pipe: PADRE escribe y HIJO lee (cierres correctos).
+Makefile : compila y limpia ejecutables.
+README.txt : guía general.
+
+Requisitos:
+
+GCC y make. Entorno POSIX (Linux, macOS o WSL).
+Uso del Makefile:
+Compilar uno: make Santamarialab01 (o 02/03)
+Ejecutar: ./Santamarialab01 (o 02/03)
+Limpiar: make clean
+
+Notas técnicas (opcionales):
+En 01/02 el orden de impresión no es determinista; el PADRE puede usar waitpid().
+En 03 conviene usar ssize_t para read(), limitar a sizeof(buf)-1, verificar write()
+y usar waitpid() en el PADRE.
+
+Pontificia Universidad Javeriana – Sistemas Operativos
+Autor: Juan Carlos Santamaría · Fecha: 09-10-2025
