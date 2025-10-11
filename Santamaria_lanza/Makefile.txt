@@ -1,0 +1,26 @@
+GCC = gcc
+PROGRAMAS = Santamarialab01 Santamarialab02 Santamarialab03
+
+Santamarialab01:
+        $(GCC) $@.c -o $@
+
+clean::
+        $(RM) $(PROGRAMAS)
+
+Santamarialab02:
+        $(GCC) $@.c -o $@
+
+clean::
+        $(RM) $(PROGRAMAS)
+
+Santamarialab03:
+        $(GCC) $@.c -o $@
+
+clean::
+        $(RM) $(PROGRAMAS)
+
+
+
+
+
+
