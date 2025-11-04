@@ -40,21 +40,19 @@ Cada práctica aborda un concepto clave: **creación de hilos, sincronización, 
 
 ## Compilación y ejecución
 ### Compilar todos los laboratorios:
-```bash
+
 make
-```
+
 
 ### Ejecutar un laboratorio específico:
-```bash
+
 ./lab03_santamaria
-```
+
 
 ### Limpiar binarios generados:
-```bash
-make clean
-```
 
-> **Nota:** El Makefile utiliza `gcc` con la bandera `-lpthread` para enlazar la biblioteca POSIX de hilos.
+make clean
+
 
 ---
 
