@@ -4,7 +4,7 @@
 **Autor:** Juan Carlos Santamaría Orjuela  
 **Materia:** Sistemas Operativos  
 **Docente:** J. Corredor  
-**Fecha:** Octubre - Noviembre 2025  
+**Fecha:** Octubre  2025  
 
 
 
@@ -73,8 +73,7 @@ make clean
 ---
 
 ## Requisitos
-- **Sistema:** Linux (Ubuntu o WSL)  
-- **Compilador:** GCC ≥ 9.0  
+- **Sistema:** Linux (Ubuntu )   
 - **Biblioteca:** POSIX Threads (`pthread`)  
 
 ---
