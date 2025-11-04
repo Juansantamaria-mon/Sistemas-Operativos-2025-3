@@ -74,7 +74,7 @@ make clean
 ---
 
 ## Requisitos
-- **Sistema:** Linux (Ubuntu o WSL)  
+- **Sistema:** Linux (Ubuntu)  
 - **Compilador:** GCC ≥ 9.0  
 - **Biblioteca:** POSIX Threads (`pthread`)  
 
