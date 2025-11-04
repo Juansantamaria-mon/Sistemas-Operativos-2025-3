@@ -1,9 +1,10 @@
-**Laboratorios de Programación Concurrente con Pthreads (C - POSIX)**
+**Laboratorios de Programación Concurrente con Pthreads)**
+
 **Pontificia Universidad Javeriana**  
 **Autor:** Juan Carlos Santamaría Orjuela  
 **Materia:** Sistemas Operativos  
 **Docente:** J. Corredor  
-**Fecha:** Octubre - Noviembre 2025  
+**Fecha:** Octubre  2025  
 
 ---
 
