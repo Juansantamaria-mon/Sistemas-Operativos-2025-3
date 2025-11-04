@@ -1,4 +1,5 @@
-**Laboratorios de Programación Concurrente con Pthreads (C - POSIX)**
+**Laboratorios de Programación Concurrente con Pthreads**
+
 **Pontificia Universidad Javeriana**  
 **Autor:** Juan Carlos Santamaría Orjuela  
 **Materia:** Sistemas Operativos  
@@ -8,6 +9,7 @@
 
 
 ## Descripción general
+
 Este proyecto recopila una serie de **laboratorios en lenguaje C** orientados al aprendizaje de la **programación concurrente con Pthreads (POSIX Threads)**.  
 Cada práctica aborda un concepto clave: **creación de hilos, sincronización, exclusión mutua y variables de condición**, mostrando tanto implementaciones correctas como errores intencionados para análisis.
 
