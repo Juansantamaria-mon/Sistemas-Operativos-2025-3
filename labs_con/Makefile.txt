@@ -1,0 +1,63 @@
+####################################################################
+# Pontificia Universidad Javeriana
+# Autor: Juan Carlos Santamaria Orjuela
+# Materia: Sistemas Operativos
+# Docente:     J. Corredor
+# Fecha:       30/10/2025
+# Tema: Automatización de compilación
+#
+# Descripcion:
+# Este Makefile compila una serie de laboratorios escritos en C que
+# emplean Pthreads (u otras librerías del sistema) mediante reglas
+# individuales por cada ejecutable. La variable FLAGS incluye los
+# flags de enlace requeridos. El objetivo 'all' construye todos los
+# binarios listados en PROGRAMAS y el objetivo #'clean' elimina los
+# ejecutables generados para dejar el árbol de trabajo limpio.
+# La estructura favorece repetibilidad y evita reescribir comandos
+# por cada archivo fuente.
+####################################################################
+
+GCC=gcc
+FLAGS= -lpthread
+MODULO=
+RM= rm -f
+
+#En listar todos los ejecutables
+PROGRAMAS=lab00_santamaria lab01_santamaria lab02_santamaria lab03_santamaria lab04_santamaria lab05_santamaria lab06_santamaria lab07_santamaria lab08_santamaria
+
+#Copila todos los ejecutables
+all: $(PROGRAMAS)
+
+
+# Cada regla siguiente define cómo construir un ejecutable a partir de su
+# fuente .c homónima. Se invoca el compilador GCC y se aplican los FLAGS
+lab00_santamaria: lab00_santamaria.c
+        $(GCC) lab00_santamaria.c -o lab00_santamaria $(FLAGS)
+
+lab01_santamaria: lab01_santamaria.c
+        $(GCC) lab01_santamaria.c -o lab01_santamaria $(FLAGS)
+
+lab02_santamaria: lab02_santamaria.c
+        $(GCC) lab02_santamaria.c -o lab02_santamaria $(FLAGS)
+
+lab03_santamaria: lab03_santamaria.c
+        $(GCC) lab03_santamaria.c -o lab03_santamaria $(FLAGS)
+
+lab04_santamaria: lab04_santamaria.c
+        $(GCC) lab04_santamaria.c -o lab04_santamaria $(FLAGS)
+
+lab05_santamaria: lab05_santamaria.c
+        $(GCC) lab05_santamaria.c -o lab05_santamaria $(FLAGS)
+
+lab06_santamaria: lab06_santamaria.c
+        $(GCC) lab06_santamaria.c -o lab06_santamaria $(FLAGS)
+
+lab07_santamaria: lab07_santamaria.c
+        $(GCC) lab07_santamaria.c -o lab07_santamaria $(FLAGS)
+
+lab08_santamaria: lab08_santamaria.c
+        $(GCC) lab08_santamaria.c -o lab08_santamaria $(FLAGS)
+
+# Elimina los binarios generados.
+clean:
+        $(RM) $(PROGRAMAS)
