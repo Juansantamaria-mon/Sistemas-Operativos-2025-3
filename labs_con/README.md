@@ -52,7 +52,6 @@ make
 make clean
 
 
----
 
 ## Resumen de prácticas
 
@@ -68,7 +67,6 @@ make clean
 | 07 | Espera con predicado | Comunicación segura entre hilos. | Sincronización correcta antes/después del cambio. |
 | 08 | Versión simplificada | Reforzar el patrón anterior. | Igual funcionalidad con menos código. |
 
----
 
 ## Requisitos
 - **Sistema:** Linux (Ubuntu )   
