@@ -28,7 +28,6 @@ Cada práctica aborda un concepto clave: **creación de hilos, sincronización, 
 └── Makefile             → Compilación automática de todos los laboratorios.
 ```
 
----
 
 ## Objetivos generales
 - Comprender el modelo de **ejecución concurrente** con hilos POSIX.  
@@ -36,7 +35,6 @@ Cada práctica aborda un concepto clave: **creación de hilos, sincronización, 
 - Implementar mecanismos de **sincronización** mediante `pthread_mutex_t` y `pthread_cond_t`.  
 - Analizar comportamientos no deterministas y su corrección mediante exclusión mutua.  
 
----
 
 ## Compilación y ejecución
 ### Compilar todos los laboratorios:
@@ -76,7 +74,6 @@ make clean
 - **Sistema:** Linux (Ubuntu )   
 - **Biblioteca:** POSIX Threads (`pthread`)  
 
----
 
 ## Autor
 **Juan Carlos Santamaría Orjuela**  
