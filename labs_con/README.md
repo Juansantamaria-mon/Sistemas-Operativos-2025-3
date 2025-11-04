@@ -1,18 +1,19 @@
-**Laboratorios de Programación Concurrente con Pthreads)**
-
+**Laboratorios de Programación Concurrente con Pthreads (C - POSIX)**
 **Pontificia Universidad Javeriana**  
 **Autor:** Juan Carlos Santamaría Orjuela  
 **Materia:** Sistemas Operativos  
 **Docente:** J. Corredor  
-**Fecha:** Octubre  2025  
+**Fecha:** Octubre - Noviembre 2025  
+
 
 
 ## Descripción general
 Este proyecto recopila una serie de **laboratorios en lenguaje C** orientados al aprendizaje de la **programación concurrente con Pthreads (POSIX Threads)**.  
 Cada práctica aborda un concepto clave: **creación de hilos, sincronización, exclusión mutua y variables de condición**, mostrando tanto implementaciones correctas como errores intencionados para análisis.
 
+
 ## Estructura de archivos
----
+```
 ├── lab00_santamaria.c   → Creación dinámica de hilos con argumentos.
 ├── lab01_santamaria.c   → Ejemplo básico de dos hilos concurrentes.
 ├── lab02_santamaria.c   → Uso de mutex y contador compartido.
@@ -23,6 +24,8 @@ Cada práctica aborda un concepto clave: **creación de hilos, sincronización, 
 ├── lab07_santamaria.c   → Espera con predicado (mutex + condición).
 ├── lab08_santamaria.c   → Versión simplificada del patrón de condición.
 └── Makefile             → Compilación automática de todos los laboratorios.
+```
+
 ---
 
 ## Objetivos generales
@@ -31,27 +34,30 @@ Cada práctica aborda un concepto clave: **creación de hilos, sincronización, 
 - Implementar mecanismos de **sincronización** mediante `pthread_mutex_t` y `pthread_cond_t`.  
 - Analizar comportamientos no deterministas y su corrección mediante exclusión mutua.  
 
+---
 
 ## Compilación y ejecución
 ### Compilar todos los laboratorios:
-
+```bash
 make
-
+```
 
 ### Ejecutar un laboratorio específico:
-
+```bash
 ./lab03_santamaria
-
+```
 
 ### Limpiar binarios generados:
-
+```bash
 make clean
+```
 
+> **Nota:** El Makefile utiliza `gcc` con la bandera `-lpthread` para enlazar la biblioteca POSIX de hilos.
 
-
+---
 
 ## Resumen de prácticas
----
+
 | **Lab** | **Tema** | **Propósito** | **Resultado esperado** |
 |----------|-----------|----------------|-------------------------|
 | 00 | Creación de hilos | Crear múltiples hilos con argumentos. | Impresiones en orden no determinista. |
@@ -63,14 +69,15 @@ make clean
 | 06 | Mutex corregido | Evitar la carrera del lab05. | Resultado estable y correcto (2870). |
 | 07 | Espera con predicado | Comunicación segura entre hilos. | Sincronización correcta antes/después del cambio. |
 | 08 | Versión simplificada | Reforzar el patrón anterior. | Igual funcionalidad con menos código. |
+
 ---
 
 ## Requisitos
-- **Sistema:** Linux (Ubuntu)  
+- **Sistema:** Linux (Ubuntu o WSL)  
 - **Compilador:** GCC ≥ 9.0  
 - **Biblioteca:** POSIX Threads (`pthread`)  
 
-
+---
 
 ## Autor
 **Juan Carlos Santamaría Orjuela**  
