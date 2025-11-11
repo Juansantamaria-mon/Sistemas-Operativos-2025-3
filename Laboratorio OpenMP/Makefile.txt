@@ -1,0 +1,35 @@
+#########################################################
+#                Pontificia universidad Javeriana
+#
+#Autor: Juam Carlos Santamaria Orjuela
+#Materia:Sistemas Operativos
+#Fichero:Automatizacion de Copilacion
+#
+# Descripción:
+#   Compila los programas labOpenMP01..labOpenMP06 con GCC.
+#   Incluye soporte OpenMP (-fopenmp) y librería matemática (-lm).
+#   Cada objetivo genera su propio ejecutable.
+################################################
+
+GCC = gcc
+FLAGS = -lm -fopenmp -O2 -Wall
+
+# Lista de ejecutables'
+PROGRAMAS = labOpenMP01 labOpenMP02 labOpenMP03 labOpenMP04 labOpenMP05 labOpenMP06
+
+#Reglas de cada programa, cada regla usa el patrón $@.
+labOpenMP01:
+        $(GCC) $@.c -o $@ $(FLAGS)
+labOpenMP02:
+        $(GCC) $@.c -o $@ $(FLAGS)
+labOpenMP03:
+        $(GCC) $@.c -o $@ $(FLAGS)
+labOpenMP04:
+        $(GCC) $@.c -o $@ $(FLAGS)
+labOpenMP05:
+        $(GCC) $@.c -o $@ $(FLAGS)
+labOpenMP06:
+        $(GCC) $@.c -o $@ $(FLAGS)
+#Borra ejecutables creados
+clean:
+        $(RM) $(PROGRAMAS)
