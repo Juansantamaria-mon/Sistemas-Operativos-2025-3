@@ -13,9 +13,9 @@ reducciones sobre sumatorias con funciones trigonométricas.
 
 Estructura
 ----------
-Lab01.c : Región paralela simple ("Hello, World" por hilo).
-Lab02.c : Fija número de hilos por argumento y verifica dentro de la región.
-Lab03.c : parallel for con variables privadas; ‘b’ compartida (efecto no determinista).
-Lab04.c : Demostración de private.
-Lab05.c : Sumatoria de sin(j) con reducción (+). Mide tiempo en microsegundos.
-Lab06.c : Variante parametrizable de Lab05 (hilos y repeticiones por argumento).
+labOpenMP01.c : Región paralela simple ("Hello, World" por hilo).
+labOpenMP02.c : Fija número de hilos por argumento y verifica dentro de la región.
+labOpenMP03.c : parallel for con variables privadas; ‘b’ compartida (efecto no determinista).
+labOpenMP04.c : Demostración de private.
+labOpenMP05.c : Sumatoria de sin(j) con reducción (+). Mide tiempo en microsegundos.
+labOpenMP06.c : Variante parametrizable de Lab05 (hilos y repeticiones por argumento).
