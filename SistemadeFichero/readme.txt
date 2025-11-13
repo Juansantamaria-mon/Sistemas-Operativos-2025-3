@@ -1,3 +1,2 @@
 Hola que tal 
-Soy Ingeniero de la Pontificia de la Univecidad
-Javeriana
+Soy Ingeniero de la Pontificia Univecidad Javeriana
